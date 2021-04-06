@@ -14,7 +14,7 @@ RUN apt-get update && \
 RUN pip3 install virtualenv
 RUN virtualenv -p python3 pyenv
 
-RUN /pyenv/bin/pip3 install numpy
+RUN /pyenv/bin/pip3 install numpy six
 RUN /pyenv/bin/pip3 install pycuda jinja2 h5py mpi4py
 RUN /pyenv/bin/pip3 install scipy
 
